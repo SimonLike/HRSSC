@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8zO-OD-aj4" customClass="LRHostCammeraView">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_live_panel.png" id="9Rn-d0-DSy">
+                    <rect key="frame" x="0.0" y="0.0" width="85" height="120"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GDx-gA-I2S">
+                    <rect key="frame" x="0.0" y="10" width="85" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="开闪光" image="ic_camera_light_off.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="关闪光" image="ic_camera_light_on.png"/>
+                    <connections>
+                        <action selector="switchFlight:" destination="8zO-OD-aj4" eventType="touchUpInside" id="LaJ-UZ-kSt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fDt-ls-uG0">
+                    <rect key="frame" x="0.0" y="42" width="85" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="翻转" image="ic_camera_turnover.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="ic_camera_turnover.png"/>
+                    <connections>
+                        <action selector="turnCammera:" destination="8zO-OD-aj4" eventType="touchUpInside" id="KoH-AH-qve"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GD9-sG-8HL">
+                    <rect key="frame" x="0.0" y="74" width="85" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="关美颜" image="ic_camera_magictool.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="开美颜"/>
+                    <connections>
+                        <action selector="switchFilter:" destination="8zO-OD-aj4" eventType="touchUpInside" id="diK-TV-gQl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="filterBtn" destination="GD9-sG-8HL" id="hF3-KF-X8c"/>
+                <outlet property="flightBtn" destination="GDx-gA-I2S" id="rwZ-nT-cTy"/>
+                <outlet property="turnOverBtn" destination="fDt-ls-uG0" id="jId-vS-0y7"/>
+            </connections>
+            <point key="canvasLocation" x="457.5" y="578"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_camera_light_off.png" width="21" height="21"/>
+        <image name="ic_camera_light_on.png" width="21" height="21"/>
+        <image name="ic_camera_magictool.png" width="21" height="21"/>
+        <image name="ic_camera_turnover.png" width="21" height="21"/>
+        <image name="img_live_panel.png" width="95" height="120"/>
+    </resources>
+</document>

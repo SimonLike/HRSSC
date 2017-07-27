@@ -1,0 +1,71 @@
+//
+//  Hrssc.pch
+//  Hrssc
+//
+//  Created by admin on 17/4/18.
+//  Copyright © 2017年 HRSSC. All rights reserved.
+//
+
+#ifndef Hrssc_pch
+#define Hrssc_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* LRVideo_pch */
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif /* Hrssc_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "NSString+WPAttributedMarkup.h"
+#import "Global.h"
+#import "Utils.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "UIViewController+HUD.h"
+#import "NSString+Valid.h"
+#import "NSString+Regex.h"
+#import "NSMutableDictionary+Extend.h"
+#import "MBProgressHUD.h"
+#import "UIView+frame.h"
+#import "XGPush.h"
+#import "NALNavigationController.h"
+#pragma mark - Thirds
+#import "UIImageView+WebCache.h"
+#import "SDCycleScrollView.h"
+#import "MBProgressHUD.h"
+#import "MBHud.h"
+#import "SVProgressHUD.h"
+
+#import "helpdesk_sdk.h"
+#import "HelpDeskUI.h"
+
+#pragma mark - Categories
+#import "NSString+Extend.h"
+#import "UIView+Extend.h"
+#import "UIImage+Extend.h"
+#import "NSMutableArray+Extend.h"
+#import "NSMutableDictionary+Extend.h"
+#import "BaseViewController.h"
+#import "BGHelper.h"
+
+//#import "MobClick.h"
+//#import "MobClickGameAnalytics.h"
+//#import "EMSDKFull.h"
+
+
+#pragma mark - BaiduMap
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+#endif
